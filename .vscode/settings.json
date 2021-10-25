@@ -1,0 +1,17 @@
+{
+    "editor.tokenColorCustomizations": {
+        // "textMateRules": [
+        //     {
+        //         "scope": [
+        //             "storage.type.function",
+        //             "keyword.control",
+        //             "keyword.control.flow"
+        //         ],
+        //         "settings": {
+        //             "fontStyle": "italic"
+        //         }
+        //     }
+        // ]
+    },
+    "prettier.tabWidth": 4
+}
