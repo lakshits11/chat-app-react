@@ -13,5 +13,6 @@
         //     }
         // ]
     },
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+    "editor.fontWeight": "400"
 }
