@@ -42,8 +42,8 @@
 }
 
 .ce-input::placeholder {
-  background-image: linear-gradient(to right, #f88eae, #d2b5ff) !important;
-  color:#000000a8;
+    background-image: linear-gradient(to right, #f88eae, #d2b5ff) !important;
+    color: #000000a8;
 }
 
 .ce-primary-button {
@@ -104,7 +104,7 @@
 }
 
 .chat-title {
-    color:  #ff0d55;
+    color: #ff0d55;
     font-weight: 800;
     font-size: 24px;
 }
@@ -237,7 +237,7 @@
 .wrapper {
     height: 100vh;
     width: 100%;
-    background: rgb(117, 84, 160);
+    /* background: rgb(117, 84, 160);
     background: linear-gradient(
         90deg,
         rgba(117, 84, 160, 1) 7%,
@@ -249,7 +249,22 @@
         rgba(44, 163, 219, 1) 96%,
         rgba(22, 188, 237, 1) 100%,
         rgba(0, 212, 255, 1) 100%
-    );
+    ); */
+    /* background-image: linear-gradient(
+        to bottom,
+        #f93681,
+        #ff556d,
+        #ff755e,
+        #ff9256,
+        #ffae57,
+        #f3bc55,
+        #e5c958,
+        #d5d662,
+        #b3d869,
+        #8dd977,
+        #61d88a,
+        #06d6a0
+    ); */
     display: flex;
     justify-content: center;
     align-items: center;

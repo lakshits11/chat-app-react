@@ -8,6 +8,16 @@ const Modal = () => {
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
 
+    let hexString = "0123456789abcdef";
+
+    let randomColor = () => {
+        let hexCode = "#";
+        for (let i = 0; i < 6; i++) {
+            hexCode += hexString[Math.floor(Math.random() * hexString.length)];
+        }
+        return hexCode;
+    };
+    console.log(randomColor());
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -33,7 +43,12 @@ const Modal = () => {
     };
 
     return (
-        <div className="wrapper">
+        <div
+            className="wrapper"
+            style={{
+                backgroundImage: `linear-gradient(to right, ${randomColor()}, ${randomColor()}) `,
+            }}
+        >
             <div className="form">
                 <h1 className="title">Chat Application</h1>
                 <form onSubmit={handleSubmit}>
