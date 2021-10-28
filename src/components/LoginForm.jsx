@@ -17,7 +17,7 @@ const Modal = () => {
         }
         return hexCode;
     };
-    console.log(randomColor());
+    // console.log(randomColor());
     const handleSubmit = async (e) => {
         e.preventDefault();
 

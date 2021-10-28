@@ -11,7 +11,7 @@ const MyMessage = ({ message }) => {
         );
     }
 
-    console.log(message);
+    // console.log(message);
     return (
         <div
             className="message"
