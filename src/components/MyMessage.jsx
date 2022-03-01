@@ -18,8 +18,9 @@ const MyMessage = ({ message }) => {
             style={{
                 float: "right",
                 marginRight: "18px",
-                color: "white",
-                backgroundImage: "linear-gradient(to right, #FF2E6D, #914DFF)",
+                boxShadow: "1px 0px 10px 0px #adabab",
+                borderRadius: "12px",
+                backgroundColor: "#f592b6",
             }}
         >
             {message.text.replace(/<\/?[^>]+(>|$)/g, "")}

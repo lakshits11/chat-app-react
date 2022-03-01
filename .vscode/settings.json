@@ -14,5 +14,6 @@
         // ]
     },
     "prettier.tabWidth": 4,
-    "editor.fontWeight": "400"
+    "editor.fontWeight": "400",
+    "typescript.tsdk": "node_modules/typescript/lib"
 }

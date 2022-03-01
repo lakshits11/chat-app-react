@@ -8,15 +8,15 @@ const Modal = () => {
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
 
-    let hexString = "0123456789abcdef";
+    // let hexString = "0123456789abcdef";
 
-    let randomColor = () => {
-        let hexCode = "#";
-        for (let i = 0; i < 6; i++) {
-            hexCode += hexString[Math.floor(Math.random() * hexString.length)];
-        }
-        return hexCode;
-    };
+    // let randomColor = () => {
+    //     let hexCode = "#";
+    //     for (let i = 0; i < 6; i++) {
+    //         hexCode += hexString[Math.floor(Math.random() * hexString.length)];
+    //     }
+    //     return hexCode;
+    // };
     // console.log(randomColor());
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -46,11 +46,13 @@ const Modal = () => {
         <div
             className="wrapper"
             style={{
-                backgroundImage: `linear-gradient(to right, ${randomColor()}, ${randomColor()}) `,
+                backgroundImage: "linear-gradient(to right, #daaced, #f592b6)",
             }}
         >
             <div className="form">
-                <h1 className="title">Chat Application</h1>
+                <h1 className="title" style={{ fontFamily: "Roboto Mono" }}>
+                    Chat Application
+                </h1>
                 <form onSubmit={handleSubmit}>
                     <input
                         type="text"
@@ -59,6 +61,7 @@ const Modal = () => {
                         className="input"
                         placeholder="Username"
                         required
+                        style={{ fontFamily: "Roboto Mono" }}
                     />
                     <input
                         type="password"
@@ -66,11 +69,14 @@ const Modal = () => {
                         onChange={(e) => setPassword(e.target.value)}
                         className="input"
                         placeholder="Password"
+                        style={{ fontFamily: "Roboto Mono" }}
                         required
                     />
                     <div align="center">
                         <button type="submit" className="button">
-                            <span>Start chatting</span>
+                            <span style={{ fontFamily: "Roboto Mono", fontWeight:"bold" }}>
+                                Start chatting
+                            </span>
                         </button>
                     </div>
                 </form>

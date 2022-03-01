@@ -1,3 +1,4 @@
+import React from "react";
 const TheirMessage = ({ lastMessage, message }) => {
     const isFirstMessageByUser =
         !lastMessage || lastMessage.sender.username !== message.sender.username;
@@ -29,14 +30,16 @@ const TheirMessage = ({ lastMessage, message }) => {
                     className="message"
                     style={{
                         float: "left",
-                        backgroundImage:
-                            "linear-gradient(to right,#914DFF, #FF2E6D)",
+                        boxShadow: "1px 0px 10px 0px #adabab",
+                        backgroundColor: " #daaced",
+                        borderRadius: "12px",
                         marginLeft: isFirstMessageByUser ? "4px" : "48px",
                     }}
                 >
                     {message.text.replace(/<\/?[^>]+(>|$)/g, "")}
                 </div>
             )}
+            <img src="" alt="" />
         </div>
     );
 };
